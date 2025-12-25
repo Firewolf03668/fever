@@ -1,0 +1,311 @@
+header{
+    background: linear-gradient(
+        to bottom right,
+        rgb(15, 1, 46) 0%,
+        rgb(38, 6, 111) 40%,
+        rgb(44, 10, 122)50%,
+        rgb(38, 6, 111)60%,
+        rgb(15, 1, 46) 100%
+);
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid rgb(17, 2, 53); 
+    z-index: 9999;
+    
+}
+#logo{
+    margin-left: 15vw;
+    color:rgb(255, 255, 255);
+    font-family: 'Rubik Pixels', sans-serif;
+}
+#main{
+    margin-top: 70px;
+    height: 600px;
+}
+.header_buttons {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-left: 45px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 3px 10px;
+    border: 2px solid transparent; 
+    transition: border-color 0.3s ease, color 0.3s ease; 
+    border-radius: 10px;
+}
+.header_buttons:hover {
+    border-color: rgb(183, 165, 255); 
+    color: rgb(183, 165, 255); 
+    border-radius: 2;
+    
+}
+.info{
+    color:rgb(255, 255, 255); 
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Quantico', sans-serif;
+    margin-top: 150px;
+    margin-left: 100px;
+    
+}
+.info2{
+    font-family: 'Quantico', sans-serif;
+    color:rgb(183, 165, 255); 
+    margin-left: 100px;
+    font-size: 19px;
+   
+    
+}
+@keyframes moveMargin {
+    0% { margin-top: 160px; }
+    50% { margin-top: 190px; }
+    100% { margin-top: 160px; }
+}
+
+.info_picture {
+    width: 32vw;
+    height: 300px;
+    border: 2px solid rgb(100, 81, 175); 
+    border-radius: 20px;
+    margin-left: 200px;
+    animation: moveMargin 3.5s ease-in-out infinite;
+}
+.main{
+    display:flex;
+    height: 676px;
+    margin-left: -8px;
+    background: linear-gradient(
+        to bottom right,
+        rgb(15, 1, 46) 0%,
+        rgb(38, 6, 111) 40%,
+        rgb(44, 10, 122)50%,
+        rgb(38, 6, 111)60%,
+        rgb(15, 1, 46) 100%
+);
+    
+    
+}
+
+.info_button {
+    background: rgb(43, 4, 127) ;
+    border:1px solid rgb(183, 165, 255);
+    width: 130px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+    transition: all 0.3s ease; 
+    }
+
+.info_button:hover {
+    color: rgb(100, 44, 220);
+    background: rgb(183, 165, 255);
+    border: 2px solid  rgb(183, 165, 255);
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.function{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    width: 100vw;
+    height: 760px;
+    background-color:rgb(13, 3, 40);
+    position: relative;
+}
+.info-2-section{
+    margin-top: 50px;
+    color:rgb(255, 255, 255); 
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Quantico', sans-serif;
+    
+}
+
+.info-3-section{
+    color:rgb(183, 165, 255); 
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Quantico', sans-serif;
+    font-weight: bold; 
+
+}
+
+.container {
+    top:100px;
+    display: flex;
+    height: 500px; 
+}
+
+
+.grid {
+    display: grid;
+    width: 1200px;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);                             
+    box-sizing: border-box;
+    padding: 10px; 
+    justify-items: center;
+    align-items: center;     
+    }
+
+.cell {
+    border: 2px solid #24065d; 
+    background: linear-gradient(
+        to bottom right,
+        rgb(15, 1, 46) 0%,
+        rgb(38, 6, 111) 40%,
+        rgb(38, 6, 111)60%,
+        rgb(15, 1, 46) 100%
+        );
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border-radius: 20px;
+        width: 350px;
+        height: 200px;
+        transition: margin-bottom 0.3s ease, color 0.3s ease; 
+}
+.cell:hover{
+    margin-bottom: 15px;
+}
+
+.grid-p1{
+    color:white;
+    font-family: 'Quantico', sans-serif;
+    padding-left: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+.grid-p2{
+    color:rgb(183, 165, 255); 
+    font-family: 'Quantico', sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+
+
+}
+.third-section{
+    width: 100vw;
+    min-height: 690px;
+    background-color: rgb(38, 6, 111);
+}
+#section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px; 
+    text-align: center; 
+    
+    
+}
+#image {
+    margin-top: 50px;
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
+    
+
+}
+
+.image {
+    border: 2px solid rgb(23, 1, 67);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    border-radius: 15px;
+    width: 430px;
+    height: 300px;
+    box-sizing: border-box; /* важно для корректных размеров */
+}
+
+.image:hover {
+    transform: scale(1.02);
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+#info-video{
+    top:30px;
+}
+.four-section{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 300px;
+    background-color:rgb(13, 3, 40);
+}
+.element-4{
+    margin-top: 60px;
+    border-radius: 10px;
+    width: 350px;
+    height: 120px;
+    margin-left: 60px;
+    background: linear-gradient(
+        to bottom right,
+        rgb(15, 1, 46) 0%,
+        rgb(38, 6, 111) 40%,
+        rgb(38, 6, 111)60%,
+        rgb(15, 1, 46) 100%
+        );;
+    border: 2px solid rgb(55, 7, 150);
+    transition: transform 0.3s, border-color 0.3s; 
+}
+.element-4:hover {
+    transform: translateY(-10px);
+    border-color: rgb(183, 165, 255); 
+}
+.text-element1{
+    font-family: 'Quantico', sans-serif;
+    padding-left: 20px;
+    font-weight: bold;
+    padding-top: 18px;
+    font-size:30px;
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255) 0%,
+        rgb(174, 143, 246) 40%,
+        rgb(38, 6, 111)60%,
+        rgb(15, 1, 46) 100%
+        );
+        -webkit-background-clip: text; 
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        color: transparent; 
+}
+.text-element2{
+    color:white;
+    font-family: 'Quantico', sans-serif;
+    padding-left: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.element-4 p {
+    margin: 0;
+}
+
+
+
